@@ -3,7 +3,7 @@ _a PPW TK1 project_
 
 Kelompok terdiiri atas:
 * Francis Wibisono
-* Husna A Farah
+* Farah Husna
 * Alfath Fiqhya
 * Tijani Putri
 * Jati Langgeng
