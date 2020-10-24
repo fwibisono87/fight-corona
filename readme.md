@@ -37,5 +37,4 @@ https://gitlab.com/fwibisono87/fight-corona
 https://github.com/fwibisono87/fight-corona
 ###Heroku
 http://fight-corona.herokuapp.com/
-
-[To be implemented] http://tk1.franciswibisono.com/
+http://tk1.franciswibisono.com/
