@@ -16,7 +16,7 @@ Berikut merupakan feature list dan ceritanya, berdasarkan contributor
 Hiburan merupakan hal yang penting didapat selama pandemi ini. Oleh karena itu, fitur yang saya buat adalah sebuah _image board_.
 Selain itu, saya juga membuat landing page project ini.
 
-### Husna A Farah
+### Farah Husna
 Membuat aplikasi tentang edukasi Corona yang bertujuan untuk memberikan informasi kepada user tentang hal-hal penting yang berhubungan dengan corona.
 Fitur yang dibuat adalah form yang dapat menampilkan list kegiatan yang dikerjakan selama pandemi.
 
