@@ -26,7 +26,7 @@ SECRET_KEY = '8s&38fgs_wic2u(gfr02w7kneyke7sbq7ri-u6gd+bhl8tcz&#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fight-corona.herokuapp.com']
 
 
 # Application definition
