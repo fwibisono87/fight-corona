@@ -1,4 +1,4 @@
-#FIGHT CORONA
+# FIGHT CORONA
 _a PPW TK1 project_
 
 Kelompok terdiiri atas:
@@ -10,7 +10,7 @@ Kelompok terdiiri atas:
 
 Asdos: Kak Intan Fadilla A.
 
-##Feature List
+## Feature List
 Berikut merupakan feature list dan ceritanya, berdasarkan contributor
 ### Francis Wibisono
 Hiburan merupakan hal yang penting didapat selama pandemi ini. Oleh karena itu, fitur yang saya buat adalah sebuah _image board_.
