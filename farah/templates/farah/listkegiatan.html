@@ -1,0 +1,87 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+    .button {
+        background-color: #374785;
+        border-radius: 15px;
+        padding: 10px 24px;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        font-family: "Poppins";
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background-color: white;
+        color: #374785;
+    }
+
+    .border {
+        border: solid;
+        width: 450px;
+        height: 45px;
+        background: #374785;
+        border-radius: 50px;
+    }
+
+    .font1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .font2 {
+        font-family: 'Poppins';
+        font-size: 22px;
+        color: #374785;
+        font-weight: 900;
+    }
+
+    .font3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 34px;
+        font-weight: bold;
+        color: #374785;
+    }
+
+     .font4 {
+        font-family: 'Poppins';
+        font-size: 22px;
+        color: #FD9F9A;
+        font-weight: 900;
+    }
+</style>
+{% endblock meta %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<h1 align="center" class="font3">  Kegiatanku selama pandemi: </h1>
+
+
+
+{% for x in listkegiatan %}
+   <p align = "center" class = "font4"> {{x.nama_kegiatan}} </p>
+{% endfor %}
+
+
+
+<br>
+<div align = "center">
+<a href="{% url 'farah:edukasi' %}"><button align="center" class="button">Kembali</button> </a>
+</div>
+{% endblock content %}

@@ -1,0 +1,187 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block meta %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+    .button{
+        background-color:#374785;
+        border-radius: 15px;
+        padding:10px 24px;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        font-family: "Poppins";
+         font-weight: bold;
+    }
+    .button:hover {
+    background-color: white;
+    color: #374785;
+    }
+
+    .border{
+    border: solid;
+    width: 450px;
+    height: 45px;
+    background:#374785 ;
+    border-radius: 50px;
+  }
+  .font1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  .font2{
+       font-family: 'Poppins';
+       font-size: 22px;
+    color: #374785;
+     font-weight: 900;
+  }
+  .font3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #374785;
+  }
+</style>    
+{% endblock meta %}
+
+{% block content %}
+<br>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+        <div>
+           <div align = "center"> 
+               <h2 align="center" class="border font1">Langkah Pencegahan</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <p align="center" > <img src="{% static 'farah/img/jaga jarak.jpg' %}" width ="224" height = "200"  class="img3 rounded-circle"> </p>
+                    <div align="center">
+                        <p align="center" class="font2">Jaga Jarak</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <p align="center"><img src="{% static 'farah/img/masker.jpg' %}"  width ="200" height = "200"  class="img3 rounded-circle"> </p>
+                    <div align="center">
+                        <p align="center"  class="font2">Pakai Masker
+                            <br>Ketika Keluar</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <p align="center"><img src="{% static 'farah/img/cuci tangan.jpeg' %}"   width ="224" height = "200" class="img3 rounded-circle"> </p>
+                    <div align="center">
+                        <p align="center"  class="font2">Rajin Mencuci
+                            <br>Tangan dengan Sabun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div align="center">
+                <h2 align="center" class="border font1">Kenali Gejala Covid!</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <p align="center"> <img src="{% static 'farah/img/demam.jpg' %}"  width ="290" height = "200"  class="img3 rounded-circle"> </p>
+                    <div align="center">
+                        <p align="center"  class="font2">Demam, Letih,
+                            <br>dan Lesu</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <p align="center"><img src="{% static 'farah/img/batuk.jpg' %}"  width ="290" height = "200"  class="img3 rounded-circle"> </p>
+                    <div align="center">
+                        <p align="center"  class="font2">Batuk dan Pilek</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <p align="center"><img src="{% static 'farah/img/tenggorokan.png' %}" width ="290" height = "200"  class="img3 rounded-circle"> </p>
+                    <div align="center">
+                        <p align="center"  class="font2">Sakit Tenggorokan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+            <div align="center">
+                <h2 align="center" class="border font1">Situs Penting</h2>
+            </div> 
+            
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <br>
+                    <br>
+                    <br>
+                    <p align="center"> <img src="{% static 'farah/img/logo menkes.png' %}" height="230" > </p>
+                    <div align="center">
+                        <br>
+                        <p align="center"  class="font2">Website ini tidak hanya berisi 
+                            <br>informasi mengenai penyebaran 
+                            <br>virus corona di Indonesia dan global, 
+                            <br>melainkan juga memuat informasi 
+                            <br>penyakit infeksi baru di Indonesia.</p>
+                            <a href="https://covid19.kemkes.go.id/category/situasi-infeksi-emerging/info-corona-virus/#.X5RK1IgzZPY"><button align="center" class="button">cek disini</button> </a>
+                            <br>
+                        </div>
+                </div>
+                
+                <div class="col-lg-6 mx-auto">
+                    <br>
+                    <br>
+                    <br>
+                    <p align="center"><img src="{% static 'farah/img/logo satgas.png' %}" width="250" height="250" > </p>
+                    <div align="center">
+                        <p align="center"  class="font2">Website ini berisi tentang virus 
+                            <br>corona yang dapat diakses oleh 
+                            <br>masyarakat Indonesia supaya 
+                            <br>mengetahui perkembangan virus 
+                            <br>corona di tanah air.</p>
+                            <a href="https://covid19.go.id/"><button align = "center" class="button">cek disini</button> </a>
+                            <br>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+        <p align = "center" class = "font3">Apa saja sih yang kamu
+        <br>lakukan selama pandemi?</p>
+            <div align="center" class="container pt-3" margin="20px">
+        <form action='' method="POST" margin="20px">
+            {% csrf_token %}
+            {{ Form }}
+            <div align="center" >
+                <input type="submit" class="button" value="Submit">
+            </div>
+        </form>
+            </div>
+       
+    {% endblock content %}
