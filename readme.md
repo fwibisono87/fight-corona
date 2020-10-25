@@ -3,7 +3,7 @@ _a PPW TK1 project_
 
 Kelompok terdiiri atas:
 * Francis Wibisono
-* Farah Husna N.
+* Farah Husna
 * Alfath Fiqhya
 * Tijani Putri
 * Jati Langgeng
@@ -30,3 +30,13 @@ Fitur "rehat" atau resep sehat yang menampilkan beberapa resep makanan sehat bes
 
 ### Jati Langgeng
 Fitur "Maskermu" yang berguna untuk mengedukasi masyarakat tentang beberapa jenis masker dan kegunaannya, disertai form yang dapat diisi mengenai pengalaman pembaca tentang menggunakan masker.
+
+## Where to find
+This project can be found at
+###Gitlab (Private Repo)
+https://gitlab.com/fwibisono87/fight-corona
+###Github 
+https://github.com/fwibisono87/fight-corona
+###Heroku
+http://fight-corona.herokuapp.com/
+http://tk1.franciswibisono.com/
