@@ -16,8 +16,10 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 from FightCorona import views
+from django.urls import include, path
 
 urlpatterns = [
     #    path('admin/', admin.site.urls),
-    path('', views.landing_page)
+    path('', views.landing_page),
+    path('edukasi/', include('farah.urls'), name="farah"),
 ]
