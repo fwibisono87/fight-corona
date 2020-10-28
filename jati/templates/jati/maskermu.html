@@ -1,19 +1,22 @@
+{% extends 'global/base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="../../static/jati/css/style.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta id="Page Maskermu">
 	<title>Maskermu</title>
 </head>
 <body>
 	<header>
-		{% block content %}
-		{% endblock content %}
+		
+		
 		
 	</header>
 	<main>
+		{% block content %}
 		<div>
 			<!-- section Judul -->
 			<div>
@@ -138,6 +141,7 @@
 			</div>
 			<!-- endsection Form -->
 		</div>
+		{% endblock content %}
 	</main>
 	<footer>
 		<!-- no entry -->
