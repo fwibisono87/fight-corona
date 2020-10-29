@@ -28,7 +28,6 @@ img.under_construction{
 }
 
 .content_box{
-    background-color: white;
     padding: 5%;
     list-style: "# ";
     margin-top: 10px;
@@ -52,4 +51,12 @@ img.under_construction{
     grid-template-rows: repeat(2, 300px);
 }
 
+.menu_image{
+    width: 50%;
+}
+
+button{
+    border-radius: 25px;
+    padding: 5px;
+}
 

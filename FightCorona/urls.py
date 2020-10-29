@@ -22,4 +22,8 @@ urlpatterns = [
     #    path('admin/', admin.site.urls),
     path('', views.landing_page),
     path('edukasi/', include('farah.urls'), name="farah"),
+    ##TODO buat path "olahraga"
+    ##TODO buat path "rehat"
+    ##TODO buat path "maskermu"
+    ##TODO buat path "forum"
 ]
