@@ -49,18 +49,6 @@ FunctionalTest:
       manage.py test --tag=functional
 
 
-Coverage:
-  <<: *disable_on_template
-  stage: deploy
-  before_script:
-    - pip install coverage
-    - coverage combine
-  script:
-    - coverage report -m
-    - coverage html
-  artifacts:
-    paths:
-      - htmlcov/
 
 Deployment:
   rules:
