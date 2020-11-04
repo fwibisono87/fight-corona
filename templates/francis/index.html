@@ -1,0 +1,58 @@
+{% extends 'global/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block meta %}
+        <meta charset="UTF-8">
+        <title>Forum</title>
+        <link rel="stylesheet" href="static/francis/css/main.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+        <br>
+        <br>
+        <br>
+        <div class="grid-container">
+            <div class="header_box">
+                <h1>Forum</h1>
+            </div>
+        </div>
+        <br>
+        {% for image in board %}
+            <div class="grid-container">
+                <div class="element">
+                    <div class="header_box">
+                        <h2>{{ image.title }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container" style="background-color: white">
+                <div class="element">
+                    <div class="content_box">
+                        <img src="media/{{ image.image }}" style="width: 50%">
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="content_box">
+                        <p class="caption">"{{ image.caption }}"</p>
+                        <p>~{{ image.author }}</p>
+                        <a href="mailto:{{ image.email }}">{{ image.email }}</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="grid-container">
+            <div class="element">
+                <div class="header_box">
+                    <h1>Upload new post:</h1>
+                </div>
+                <div class="content_box" style="background-color: white">
+                    <a href="/forum/new_post"><button>Add New!</button></a>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+</body>
+</html>

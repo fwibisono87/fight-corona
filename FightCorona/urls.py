@@ -14,16 +14,28 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 # from django.contrib import admin
+from django.contrib import admin
 from django.urls import path
 from FightCorona import views
 from django.urls import include, path
+from francis import views as francis_views
+from .settings import DEBUG, STATIC_URL, STATIC_ROOT, MEDIA_URL, MEDIA_ROOT
+from django.conf.urls.static import static
 
 urlpatterns = [
-    #    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', views.landing_page),
+    path('forum', francis_views.index, name='francis'),
+    path('forum/new_post', francis_views.upload),
     path('edukasi/', include('farah.urls'), name="farah"),
     ##TODO buat path "olahraga"
     ##TODO buat path "rehat"
     ##TODO buat path "maskermu"
     ##TODO buat path "forum"
 ]
+
+if DEBUG:
+    urlpatterns += static(STATIC_URL, document_root = STATIC_ROOT)
+    urlpatterns += static(MEDIA_URL, document_root = MEDIA_ROOT)
+
+

@@ -5,6 +5,9 @@ body{
 h1{
     font-family: Poppins;
 }
+h2{
+    font-family: Poppins;
+}
 
 img.under_construction{
     display: block;
@@ -56,7 +59,10 @@ img.under_construction{
 }
 
 button{
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 5px;
+}
+.caption{
+    font-style: italic;
 }
 

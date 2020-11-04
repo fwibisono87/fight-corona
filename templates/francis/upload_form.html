@@ -1,0 +1,51 @@
+{% extends 'global/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block meta %}
+        <meta charset="UTF-8">
+        <title>New Post</title>
+        <link rel="stylesheet" href="{{ static }}/static/francis/css/main.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+        <br>
+        <br>
+        <br>
+        <div class="grid-container">
+            <div class="element">
+                <div class="header_box">
+                    <h1>New Post</h1>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="element">
+                <div class="content_box"  style="display: flex; justify-content: center">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <table style="padding: 5px">
+                            {% for field in upload_form %}
+                                <tr>
+                                    <th>{{ field.label }}:</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ field }}</td>
+                                </tr>
+                            {% endfor %}
+                            <tr>
+                                <td style="padding-top: 5px">
+                                    <button type="submit"  style="text-align: center">Submit</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+</body>
+</body>
+</html>
