@@ -18,6 +18,8 @@ cache:
 .django_before_script: &django_before_script |-
   pip install -r requirements.txt
   python manage.py collectstatic --no-input
+  python manage.py makemigrations
+  python manage.py migrate
 
 .coverage_artifacts: &coverage_artifacts
   artifacts:
