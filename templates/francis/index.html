@@ -18,6 +18,10 @@
             <div class="header_box">
                 <h1>Forum</h1>
             </div>
+            <br>
+            <div class="content_box" style="background-color: #f76c6c">
+                Loncat ke bawah untuk membuat post baru <a href="forum#add-new"><button>disini!</button></a>
+            </div>
         </div>
         <br>
         {% for image in board %}
@@ -29,11 +33,13 @@
                 </div>
             </div>
             <div class="grid-container" style="background-color: white">
-                <div class="element">
-                    <div class="content_box">
-                        <img src="media/{{ image.image }}" style="width: 50%">
+                {% if image.image %}
+                    <div class="element">
+                        <div class="content_box">
+                            <img src="media/{{ image.image }}" style="width: 50%">
+                        </div>
                     </div>
-                </div>
+                {% endif %}
                 <div class="element">
                     <div class="content_box">
                         <p class="caption">"{{ image.caption }}"</p>
@@ -45,11 +51,8 @@
         {% endfor %}
         <div class="grid-container">
             <div class="element">
-                <div class="header_box">
-                    <h1>Upload new post:</h1>
-                </div>
-                <div class="content_box" style="background-color: white">
-                    <a href="/forum/new_post"><button>Add New!</button></a>
+                <div class="content_box" style="background-color: #f76c6c" id="add-new">
+                    <a href="/forum/new_post"><button>Tambah pos baru disini!</button></a>
                 </div>
             </div>
         </div>
