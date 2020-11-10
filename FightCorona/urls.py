@@ -27,6 +27,7 @@ urlpatterns = [
     path('', views.landing_page),
     path('forum', francis_views.index, name='francis'),
     path('forum/new_post', francis_views.upload),
+    path('tentang', views.about),
     path('edukasi/', include('farah.urls'), name="farah"),
     ##TODO buat path "olahraga"
     ##TODO buat path "rehat"
