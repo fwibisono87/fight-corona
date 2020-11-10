@@ -33,10 +33,10 @@ Fitur "Maskermu" yang berguna untuk mengedukasi masyarakat tentang beberapa jeni
 
 ## Where to find
 This project can be found at
-###Gitlab (Private Repo)
-https://gitlab.com/fwibisono87/fight-corona
-###Github 
-https://github.com/fwibisono87/fight-corona
-###Heroku
-http://fight-corona.herokuapp.com/
-http://tk1.franciswibisono.com/
+
+Gitlab (Private Repo)
+* https://gitlab.com/fwibisono87/fight-corona
+
+Heroku
+* http://fight-corona.herokuapp.com/
+* http://tk1.franciswibisono.com/
