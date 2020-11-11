@@ -62,6 +62,23 @@ class forumPageTest(TestCase):
             'caption': 'panjaaaaang',
             'image': file_mock
         })
+class aboutpagetest(TestCase):
+    def test_aboutpage_exists(self):
+        response = Client().get('/tentang')
+        self.assertEqual(response.status_code, 200)
+
+    def test_aboutpage_uses_base_html(self):
+        response = Client().get('/tentang')
+        self.assertTemplateUsed(response, 'global/base.html')
+
+    def test_aboutpage_uses_home_html(self):
+        response = Client().get('/tentang')
+        self.assertTemplateUsed(response, 'global/about.html')
+
+    def test_aboutpage_has_welcome(self):
+        response = Client().get('/tentang')
+        self.assertContains(response, "Sebuah proyek Tugas Kelompok 1, Perancangan dan Pemrograman Web")
+
 
 
 # Create your tests here.
