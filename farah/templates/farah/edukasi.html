@@ -48,7 +48,7 @@
   }
   .font3{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
     color: #374785;
   }
@@ -56,9 +56,6 @@
 {% endblock meta %}
 
 {% block content %}
-<br>
-<br>
-<br>
     <br>
     <br>
     <br>
@@ -73,7 +70,9 @@
                 <div class="col-lg-4 mx-auto">
                     <p align="center" > <img src="{% static 'farah/img/jaga jarak.jpg' %}" width ="224" height = "200"  class="img3 rounded-circle"> </p>
                     <div align="center">
-                        <p align="center" class="font2">Jaga Jarak</p>
+                        <p align="center" class="font2">Jaga Jarak
+                            <br> dengan Orang Lain
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 mx-auto">
@@ -126,10 +125,10 @@
                 </div>
             </div>
         </div>
+        <br>
             <br>
             <br>
-            <br>
-            <br>
+            
             <div>
             <div align="center">
                 <h2 align="center" class="border font1">Situs Penting</h2>
@@ -175,8 +174,8 @@
         <br>
         <br>
         <div>
-        <p align = "center" class = "font3">Apa saja sih yang kamu
-        <br>lakukan selama pandemi?</p>
+        <p align = "center" class = "font3">Menurut kalian, apa saja sih kegiatan yang
+        <br>dapat dilakukan selama pandemi berlangsung?</p>
             <div align="center" class="container pt-3" margin="20px">
         <form action='' method="POST" margin="20px">
             {% csrf_token %}
@@ -185,6 +184,12 @@
                 <input type="submit" class="button" value="Submit">
             </div>
         </form>
+
+        <br>
+        <br>
+        <br>
+
+        <a href="{% url 'farah:listkegiatan' %}"><button align="center" class="button">Cek Kegiatan</button> </a>
             </div>
        
     {% endblock content %}
