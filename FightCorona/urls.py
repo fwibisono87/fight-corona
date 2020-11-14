@@ -29,6 +29,7 @@ urlpatterns = [
     path('forum/new_post', francis_views.upload),
     path('tentang', views.about),
     path('edukasi/', include('farah.urls'), name="farah"),
+    path('maskermu/', include('jati.urls'), name="jati"),
     ##TODO buat path "olahraga"
     ##TODO buat path "rehat"
     ##TODO buat path "maskermu"
