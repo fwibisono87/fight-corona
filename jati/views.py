@@ -1,27 +1,27 @@
 from django.shortcuts import render, redirect
-from .forms import FormKegiatan
-from .models import Kegiatan
+from .forms import FormPengalaman
+from .models import Pengalaman
 # Create your views here.
 
 
-def edukasi(request):
-    form_kegiatan = FormKegiatan()
+def maskermu(request):
+    form_pengalaman = FormPengalaman()
     if request.method == 'POST':
-        form_fix = FormKegiatan(request.POST)
+        form_fix = FormPengalaman(request.POST)
         if (form_fix.is_valid()):
-            kegiatan = Kegiatan()
-            kegiatan.nama_kegiatan = form_fix.cleaned_data['nama_kegiatan']
-            kegiatan.save()
-        return redirect('/edukasi/listkegiatan')
+            pengalaman = Pengalaman()
+            pengalaman.cerita_pengalaman = form_fix.cleaned_data['cerita_pengalaman']
+            pengalaman.save()
+        return redirect('/maskermu/listpengalaman')
     else:
-        form = FormKegiatan()
-        kegiatan = Kegiatan.objects.all()
+        form = FormPengalaman()
+        pengalaman = Pengalaman.objects.all()
         context = {
             'Form': form,
-            'kegiatan': kegiatan
+            'pengalaman': pengalaman
         }
-        return render(request, 'farah/edukasi.html', context)
+        return render(request, 'jati/maskermu.html', context)
 
-def listkegiatan(request) :
-    kegiatan = Kegiatan.objects.all()
-    return render(request, 'farah/listkegiatan.html', {'listkegiatan': kegiatan})
+def listpengalaman(request) :
+    pengalaman = Pengalaman.objects.all()
+    return render(request, 'jati/listpengalaman.html', {'listpengalaman': pengalaman})

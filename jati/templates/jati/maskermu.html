@@ -136,9 +136,13 @@
 				</div>
 			</div>
 
-			<div>
-				<input type="submit" name="submit" value="Upload Ceritamu!">
-			</div>
+				<form action='' method="POST" margin="20px">
+					{% csrf_token %}
+					{{ Form }}
+					<div align="center">
+						<input type="submit" class="button" value="Submit">
+					</div>
+				</form>
 			<!-- endsection Form -->
 		</div>
 		{% endblock content %}
