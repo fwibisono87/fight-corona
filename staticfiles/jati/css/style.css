@@ -1,0 +1,46 @@
+body{
+	background-color: white;
+	font-family: Roboto;
+}
+
+div h4{
+	font-family: Poppins;
+	text-align: center;
+}
+
+img.mKain{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+img.m2PLY{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+img.m3PLY{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+img.mN95{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.box-masker{
+	display: grid;
+    grid-row-gap: 1px;
+    grid-column-gap: 5px;
+    margin: 10px;
+    align-items: center;
+    border: solid;
+}
