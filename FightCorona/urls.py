@@ -32,8 +32,6 @@ urlpatterns = [
     path('maskermu/', include('jati.urls'), name="jati"),
     ##TODO buat path "olahraga"
     ##TODO buat path "rehat"
-    ##TODO buat path "maskermu"
-    ##TODO buat path "forum"
 ]
 
 if DEBUG:
